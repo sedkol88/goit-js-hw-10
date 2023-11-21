@@ -52,11 +52,11 @@ export function fetchCatByBreed(breedId) {
   })
   .catch(error => {
     showError();
-    loader.style.display = 'none';
   });
+  
 }
 
-
 function showError() {
-  error.style.display = 'block';
+  loader.style.display = 'none';
+  // error.style.display = 'block';
 }
