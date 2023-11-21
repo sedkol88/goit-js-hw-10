@@ -23,7 +23,7 @@ export function fetchBreeds() {
   })
     .catch(error => {
     showError();
-  });;
+  });
 }
 
 
@@ -57,5 +57,6 @@ export function fetchCatByBreed(breedId) {
 
 
 function showError() {
+  loader.style.display = 'none';
   error.style.display = 'block';
 }
