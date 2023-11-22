@@ -58,4 +58,5 @@ export function fetchCatByBreed(breedId) {
 
 function showError() {
   error.style.display = 'block';
+  loader.style.display = 'none';
 }
